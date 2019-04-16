@@ -1,0 +1,162 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* html, body {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#scene, canvas{
+    width: 100%;
+    height: 100%;
+}
+
+ */
+
+ html, body{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Cinzel', serif;
+}
+
+#scene{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+canvas{
+    width: 100%;
+    height: 100%;
+}
+
+
+.title{
+    position: absolute;
+    color: #ff9900;
+    text-align: center;
+    top: 50px;
+    z-index: 9999  ;
+    width: 100%;
+
+    background: -webkit-linear-gradient(#ff9900, rgb(255, 252, 155));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+    opacity: 0;
+}
+
+.victoria{
+    font-size: 3rem;
+}
+
+.paris{
+    font-size: 4rem;
+}
+
+#time{
+    position: absolute;
+    bottom: 0px;
+}
+
+
+#text{
+    bottom: 0px;
+    background: -webkit-linear-gradient(#ff9900, rgb(255, 252, 155));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	z-index: 9999;
+	/* position: absolute; */
+	margin: auto;
+	/* background-color: black; */
+	/* top: 60%; */
+}
+
+.counter{
+	/* width: 200px; */
+	text-align: center;
+	/* color: red; */
+	font-size: 1.5rem;
+	display: inline-block;
+	position: relative;
+    /* padding: 10px; */
+    background: -webkit-linear-gradient(#ff9900, rgb(255, 252, 155));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+#time{
+	position: absolute;
+    text-align: center;
+    z-index: 99999;
+    bottom: 20px;
+    /* height: 150px; */
+    width: 100%;
+    
+
+}
+
+@media only screen and (min-width: 600px)  {
+    #time{
+        bottom: 50px;
+    }
+
+    .counter{
+        font-size: 2.5rem;
+    }
+}
+
+#numbers{
+    width: 100%;
+}
+
+.wrapper{
+    max-width: 600px;
+    margin: auto;
+}
+
+.show{
+    opacity: 1;
+    transition: 2s;
+    transition-delay: 2s;
+}
+
+.hide{
+    opacity: 0;
+    transition: 2s;
+}
+
+#loading{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+}
+
+img{
+    display: block;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 200px;
+}
+
+#content{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
